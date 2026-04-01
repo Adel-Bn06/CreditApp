@@ -1,0 +1,7 @@
+<h1>Application de Crédit</h1>
+
+<app-credit-form (onSimulate)="handleSimulate($event)"></app-credit-form>
+
+<app-results-summary [result]="simulationResult"></app-results-summary>
+
+<app-amortization-table [rows]="simulationResult?.Tableau"></app-amortization-table>

@@ -1,0 +1,10 @@
+<h2>Simulation</h2>
+
+<input #montant type="number" [value]="model.montantAchat" placeholder="Montant Achat">
+<input #fonds type="number" [value]="model.fondsPropres" placeholder="Fonds Propres">
+<input #duree type="number" [value]="model.duree" placeholder="Durée (mois)">
+<input #taux type="number" [value]="model.tauxAnnuel" placeholder="Taux Annuel">
+
+<button (click)="simulateFromInputs(montant.value, fonds.value, duree.value, taux.value)">
+  Simuler
+</button>
